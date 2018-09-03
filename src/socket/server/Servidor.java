@@ -13,6 +13,7 @@ public class Servidor {
         
         Runnable thread = ()-> {
         	Socket cliente = null;
+        	
 			try {
 				cliente = servidor.accept();
 			} catch (IOException e) {
